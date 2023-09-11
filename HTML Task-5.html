@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Task-4</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        table,
+        td,
+        tr {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 700px;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            width: 150px;
+        }
+
+        #e1,
+        #e2,
+        #e3 {
+            font-weight: normal;
+        }
+
+        table {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        input[type=text] {
+            width: 98.7%;
+        }
+
+        input[type=password] {
+            width: 98.7%;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        button:hover {
+            background-color: rgb(250, 250, 171);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration form</h1>
+    <div class="form-center">
+        <table>
+            <form>
+                <tr>
+                    <td><label for="firstname">First Name</label></td>
+                    <td><input type="text" id="FirstName" /></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">Last Name</label></td>
+                    <td><input type="text" id="lastName" /></td>
+                </tr>
+                <tr>
+                    <td><label for="Username">Email</label></td>
+                    <td><input type="text" id="Username" /></td>
+
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" /></td>
+                </tr>
+                <tr>
+                    <td><label for="re-password">Re-enter Password</label></td>
+                    <td><input type="password" id="repassword" /></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><label for="gender">Gender:</label></td>
+                    <td><input type="radio" id="male" name="gender" />
+                        <label for="male">Male</label>
+                    </td>
+                </tr>
+                <td id="e1"><input type="radio" id="female" name="gender" />
+                    <label for="female">Female</label>
+                </td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="text" id="age" /></td>
+                </tr>
+                <tr>
+                    <td><label for="number">Phone Number</label></td>
+                    <td><input type="text" id="phno" /></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><input style="height:100px;" type="text" id="address" /></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State</label></td>
+                    <td><input type="text" id="state" /></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td><select name="country" id="country">
+
+                            <option>Choose your country
+                            <option value="India">India</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Afhanistan">Canada</option>
+                            <option value="Tibet">Tibet</option>
+                            <option value="China">United States</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="language">Languages Known</label></td>
+                    <td><input type="checkbox" id="english" name="language" />
+                        <label for="english">English</label>
+                        <input type="checkbox" id="kannada" name="language" />
+                        <label for="kannada">Kannada</label>
+                        <input type="checkbox" id="hindi" name="language" />
+                        <label for="hindi">Hindi</label>
+                        <input type="checkbox" id="telugu" name="language" />
+                        <label for="telugu">Telugu</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="e2">
+                        <input type="checkbox" id="declare" name="delcare" required />
+                        <label for="declare">Hereby I declare all the given details are true</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="e3" style="text-align: end;" colspan="2">Log in to <span><a href="https://ethnus.com/"
+                                target="_blank">Ethnus</a></span> website</a>
+                    </td>
+                </tr>
+            </form>
+        </table>
+        <div class="center">
+            <p><button id="Register" onClick="myTra()">Register</button></p>
+        </div>
+    </div>
+</body>
