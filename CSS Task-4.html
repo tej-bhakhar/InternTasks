@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task-4</title>
+    <style>
+        ul li {
+            position: absolute;
+            text-decoration: none;
+            left: -100px;
+            color: aliceblue;
+            font-size: 20px;
+            transition: 0.4s;
+        }
+
+
+        li {
+            width: 115px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        ul li:hover {
+            left: 0px;
+        }
+
+        #Green {
+            top: 40px;
+            background-color: green;
+        }
+
+        #Blue {
+            top: 100px;
+            background-color: blue;
+        }
+
+        #Red {
+            top: 160px;
+            background-color: red;
+        }
+
+        #Grey {
+            top: 220px;
+            background-color: grey;
+        }
+
+        .text {
+            margin-left: 80px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text">Hoverable Sidenav Buttons</h1>
+    <p class="text">Hover over he buttons in the left side navigation to open</p>
+    <div class="SideNav">
+        <ul type="none">
+            <li id="Green">First</li>
+            <li id="Blue">Second</li>
+            <li id="Red">Third</li>
+            <li id="Grey">Fourth</li>
+        </ul>
+    </div>
+</body>
+
+</html>

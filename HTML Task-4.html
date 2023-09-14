@@ -6,42 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Task-4</title>
     <style>
-        button:hover {
-            background: rgb(255, 205, 111);
-            color: black;
+        button {
+            border: 1px solid black;
+            border-radius: 3px;
         }
 
-        button {
-            border: none;
-            padding: 5px;
-            transition: 0.3s;
+        button:hover {
+            background-color: rgb(255, 247, 138);
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 1vh;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .form {
+            width: 25vw;
+        }
+
+        #gender {
+            margin-right: 52px;
+            height: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div id="container">
-        <form>
-            <label for="FullName">Full Name:</label>
-            <input type="text" placeholder="First Middle Last" id="FullName" /><br /><br />
-            <label for="Username">Username:</label>
-            <input type="text" placeholder="Username" id="Username" /><br /><br />
-            <label for="password">Password:</label>
-            <input type="password" placeholder="password" id="password" /><br /><br />
-            <label for="re-password">Re Password:</label>
-            <input type="password" placeholder="re-password" id="repassword" /><br /><br />
-            <label for="address">Address:</label>
-            <input type="address" placeholder="address" id="address" /><br /><br />
-            <label for="age">Age:</label>
-            <input type="age" placeholder="age" id="age" /><br /><br />
-            <label for="gender">Gender:</label>
-            <select name="gender" id="gender">
-                <option value="">-Select Gender-</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Other">Other</option>
-            </select>
-        </form>
-        <p><button id="save" onClick="myTra()"> Save</button></p>
+    <div class="bg">
+        <div class="form">
+            <div class="column">
+                <div class="row">
+                    <label for="FullName">Full Name:</label><input type="text" placeholder="First Middle Last"
+                        id="FullName" />
+                </div>
+                <div class="row">
+                    <label for="Username">Username:</label><input type="text" placeholder="Username" id="Username" />
+                </div>
+                <div class="row">
+                    <label for="password">Password:</label><input type="password" placeholder="password"
+                        id="password" />
+                </div>
+                <div class="row">
+                    <label for="re-password">Re Password:</label><input type="password" placeholder="re-password"
+                        id="repassword" />
+                </div>
+                <div class="row">
+                    <label for="address">Address:</label><input type="address" placeholder="address" id="address" />
+                </div>
+                <div class="row"><label for="age">Age:</label><input type="age" placeholder="age" id="age" /></div>
+                <div class="row">
+                    <label for="gender">Gender:</label>
+                    <select name="gender" id="gender">
+                        <option value="">-Select Gender-</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="row"><button>Save</button></div>
+            </div>
+        </div>
     </div>
 </body>
+
+</html>

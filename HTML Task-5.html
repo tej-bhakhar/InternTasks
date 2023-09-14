@@ -4,8 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Task-4</title>
+    <title>HTML Task-5</title>
     <style>
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
         h1 {
             text-align: center;
             color: blue;
@@ -16,23 +24,21 @@
         tr {
             border: 2px solid black;
             border-collapse: collapse;
-            width: 700px;
         }
 
         td:first-child {
             font-weight: bold;
-            width: 150px;
+            width: 160px;
+        }
+
+        td:first-child+td {
+            width: 540px;
         }
 
         #e1,
         #e2,
         #e3 {
             font-weight: normal;
-        }
-
-        table {
-            margin-right: auto;
-            margin-left: auto;
         }
 
         input[type=text] {
@@ -43,13 +49,6 @@
             width: 98.7%;
         }
 
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50px;
-        }
-
         button:hover {
             background-color: rgb(250, 250, 171);
         }
@@ -58,8 +57,8 @@
 
 <body>
     <h1>Registration form</h1>
-    <div class="form-center">
-        <table>
+    <div class="form">
+        <table cellspacing="0">
             <form>
                 <tr>
                     <td><label for="firstname">First Name</label></td>
@@ -102,7 +101,7 @@
                 </tr>
                 <tr>
                     <td><label for="address">Address</label></td>
-                    <td><input style="height:100px;" type="text" id="address" /></td>
+                    <td><textarea style="width: 99%;" name="" id="" cols="40" rows="7"></textarea></td>
                 </tr>
                 <tr>
                     <td><label for="state">State</label></td>
@@ -146,8 +145,8 @@
                 </tr>
             </form>
         </table>
-        <div class="center">
-            <p><button id="Register" onClick="myTra()">Register</button></p>
+        <div>
+            <p><button style="height: 20px;width: 80px;" onClick="myTra()">Register</button></p>
         </div>
     </div>
 </body>

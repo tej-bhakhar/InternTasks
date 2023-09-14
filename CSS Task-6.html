@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task-6</title>
+    <style>
+        #full {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        #page label {
+            text-align: left;
+            font-weight: 700;
+            font-family: "Lato", sans-serif;
+        }
+
+        .bot {
+            width: 400px;
+            border-collapse: collapse;
+            border: 1px solid rgb(219, 217, 217);
+            padding: 10px;
+            margin-bottom: 12px;
+        }
+
+        #login {
+            border: 1px transparent;
+            width: 420px;
+            padding: 10px;
+            color: white;
+            background-color: rgb(53, 173, 53);
+            margin-bottom: 12px;
+        }
+
+        .remember {
+            font-family: "Lato", sans-serif;
+        }
+
+        #but {
+            border: 1px solid rgb(219, 217, 217);
+            padding: 15px 0;
+            width: 420px;
+            margin: 12px 0;
+            background-color: rgb(224, 223, 223);
+        }
+
+        #but div {
+            display: inline;
+            margin-left: 215px;
+            font-family: "Lato", sans-serif;
+        }
+
+        #but button {
+            background-color: red;
+            color: white;
+            border-collapse: collapse;
+            border: 1px solid red;
+            border-radius: 5px;
+            padding: 7px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="full">
+        <div id="image">
+            <img src="https://t4.ftcdn.net/jpg/02/45/28/13/360_F_245281310_8MM6MbrHRvlsViICuhg6Lk1odT3QLBPK.jpg"
+                alt="Image Here" style="width:340px;height:256px;" />
+        </div>
+        <div id="page">
+            <form action="">
+                <label for="">Username</label>
+                <br />
+                <input type="text" placeholder="Enter Username" class="bot" />
+                <br />
+                <label for="">Password</label>
+                <br />
+                <input type="password" placeholder="Enter Password" class="bot" /><br />
+                <button type="submit" id="login">Login</button><br />
+                <input type="checkbox" /> <span class="remember">Remember me</span>
+            </form>
+            <div id="but">
+                <button id="button">Cancel</button>
+                <div>Forgot <a href="#" style="color: black">password?</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
