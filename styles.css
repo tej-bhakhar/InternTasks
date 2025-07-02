@@ -1,0 +1,28 @@
+.navigation {
+  background: linear-gradient(rgb(189, 189, 255), rgb(200, 200, 255), #cfd8fe);
+  font-size: 19px;
+}
+.main {
+  background-image: url(austria.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 92vh;
+  text-align: center;
+}
+#p1 {
+  width: 800px;
+}
+.grid-style {
+  background: linear-gradient(
+    rgb(87, 87, 255),
+    rgb(135, 135, 255),
+    rgb(230, 248, 255)
+  );
+}
+.footer {
+  padding-left: 20rem;
+  background: linear-gradient(
+    rgb(230, 248, 255),
+    #efefff,
+    rgb(239, 235, 255));
+}

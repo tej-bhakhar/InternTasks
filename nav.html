@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <title>Navagational Bar</title>
+</head>
+
+<body>
+  <!-- Nav_bar starts -->
+  <nav class="navbar navbar-expand-lg navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px;font-weight: 600;font-style: italic;font-family: serif;">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#tours">Tour Packages</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn bg-success text-white" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav_bar Ends -->
+
+  <!-- Main Content Starts -->
+  <div class="main">
+    <h1 class="p-5 display-1" style="text-align: left;">
+      Welcome To <span class="text-primary">My Travels</span>
+    </h1>
+    <p class="p-1 text-dark" id="p1" style="font-size: 20px;">
+      Austria (German: Österreich),[c] formally the Republic of Austria
+      (German: Republik Österreich),[d] is a landlocked country in Central
+      Europe, lying in the Eastern Alps.[12] It is a federation of nine
+      provinces, one of which is the capital, Vienna, the most populous city
+      and province. Austria is bordered by Germany to the northwest, Czechia
+      to the north, Slovakia to the northeast, Hungary to the east, Slovenia
+      and Italy to the south, and Switzerland and Liechtenstein to the west.
+      The country occupies an area of 83,871 km2 (32,383 sq mi) and has a
+      population of 9 million.[13]
+    </p>
+  </div>
+  <!-- Main Content Ends -->
+
+  <!-- Grid Starts-->
+  <div class="grid-style py-3">
+    <h1 class="text-center bg-white p-2 mx-3 py-4" id="tours">Tours and Packages</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col p-2 m-2" style="border-radius: 9px;">
+          <!-- Bootstrap Card Starts-->
+          <div class="card" style="width: 20rcm;">
+            <img src="austria.jpg" alt="image here" class="card-img-top" style="height: 200px" />
+            <div class="card-body">
+              <h1 class="card-title">Austria</h1>
+              <p class="card-text">lorem ipsum dolor sit amet, consectetur </p>
+            </div>
+          </div>
+          <!-- Bootstrap Card Ends-->
+        </div>
+        <div class="col p-2 m-2" style="border-radius: 9px;">
+          <div class="card" style="width: 20rcm;">
+            <img src="austria.jpg" alt="image here" class="card-img-top" style="height: 200px" />
+            <div class="card-body">
+              <h1 class="card-title">Austria</h1>
+              <p class="card-text">lorem ipsum dolor sit amet, consectetur </p>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2 m-2" style="border-radius: 9px;">
+          <div class="card" style="width: 20rcm;">
+            <img src="austria.jpg" alt="image here" class="card-img-top" style="height: 200px" />
+            <div class="card-body">
+              <h1 class="card-title">Austria</h1>
+              <p class="card-text">lorem ipsum dolor sit amet, consectetur </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col p-2 m-2" style="border-radius: 9px;">
+          <div class="card" style="width: 20rcm;">
+            <img src="austria.jpg" alt="image here" class="card-img-top" style="height: 200px" />
+            <div class="card-body">
+              <h1 class="card-title">Austria</h1>
+              <p class="card-text">lorem ipsum dolor sit amet, consectetur </p>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2 m-2" style="border-radius: 9px;">
+          <div class="card" style="width: 20rcm;">
+            <img src="austria.jpg" alt="image here" class="card-img-top" style="height: 200px" />
+            <div class="card-body">
+              <h1 class="card-title">Austria</h1>
+              <p class="card-text">lorem ipsum dolor sit amet, consectetur </p>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2 m-2" style="border-radius: 9px;">
+          <div class="card" style="width: 20rcm;">
+            <img src="austria.jpg" alt="image here" class="card-img-top" style="height: 200px" />
+            <div class="card-body">
+              <h1 class="card-title">Austria</h1>
+              <p class="card-text">lorem ipsum dolor sit amet, consectetur </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Grid Ends-->
+
+  <!-- Footer Starts-->
+  <!-- Elements which are defined by the programmer/user is called as semantic element -->
+  <footer class="d-flex footer">
+    <div class="p-3 m-3">
+      <form>
+        <div class="m-2 p-2">
+          <label for="email" class="form-label text-dark" style="font-size: 23px;font-weight: 400;">Email
+            Address</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Email" />
+        </div>
+        <div class="m-2 p-2">
+          <label for="comments" class="text-dark" style="font-size: 23px;font-weight: 400;">Message</label>
+          <textarea name="comments" id="comments" cols="30" rows="10" class="form-control"
+            placeholder="Enter your text"></textarea>
+        </div>
+      </form>
+    </div>
+    <div class="p-4 m-4">
+      <h1 class="text-dark" style="font-size: 23px;font-weight: 400;">Our location</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14845.526047693442!2d70.4995143!3d21.5319327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39580160ee0223fd%3A0x68e5ce0f323e254e!2sBhavnath%2C%20Gujarat%20362004!5e0!3m2!1sen!2sin!4v1694514941064!5m2!1sen!2sin"
+        width="500" height="358" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+  <!-- Footer Ends-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
